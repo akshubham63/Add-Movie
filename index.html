@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-sm-12 bg-primary">
+                <div class="row">
+                    <div class="col-sm-9 p-2 text-white">
+                        <h1>Movie Card</h1>
+                    </div>
+                    <div class="col-sm-3 py-3 text-right">
+                        <button class="btn btn-success bg-lg myClose" id="btn">Add Movie</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="movieCardContainer">
+            
+        </div>
+    </div>
+    <!-- fixed content -->
+    <div class="backDrop d-none" id="backDrop"></div>
+    <div class="movieModel d-none" id="movieModel">
+        <h1 class="myModelHeading mb-3 d-inline-block">Add Movie</h1>
+        <i class="fa-solid fa-xmark myClose cancelIcon" id="cancelIcon"></i>
+        <div class="myModelContent">
+            <div class="form-group">
+                <label for="title" class="text-capitalize">title</label>
+                <input type="text" name="" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="imgUrl" class="text-capitalize">url</label>
+                <input type="text" name="" id="imgUrl" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="rating" class="text-capitalize">rating</label>
+                <input type="number" name="" id="rating" class="form-control" max="10" min="0">
+            </div>
+            <div class="form-group text-right">
+                <button class="btn btn-primary mr-3 myClose" id="addMovie">Add Movie</button>
+                <button class="btn btn-danger myClose" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
